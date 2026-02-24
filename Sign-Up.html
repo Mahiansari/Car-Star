@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap-5.0.2-dist\css\bootstrap.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="width: 100%; height: 100vh; background: linear-gradient(rgba(0, 0, 0,0.7),rgba(0, 0, 0,0.7)),url(blur.jpg); 
+        background-position: center; background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 m-auto bg-light p-5" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); 
+                border-radius: 10px; box-shadow: 0px 0px 20px 3px rgb(131, 195, 248); border: 1px solid black;">
+                    <div class="row">
+                        <!-- first name -->
+                        <div class="col">
+                            <input type="text" placeholder="First name" aria-label="First name" id="fnames"
+                                class="form-control Sign_up_Input">
+                            <label id="fname_error"></label>
+                        </div>
+                        <!-- first name -->
+
+                        <!-- Last name -->
+                        <div class="col">
+                            <input type="text" placeholder="Last name" aria-label="Last name" id="lnames"
+                                class="form-control Sign_up_Input">
+                            <label id="lname_error"></label>
+                        </div>
+                        <!-- Last name -->
+                    </div>
+
+                    <!-- email addrass -->
+                    <div>
+                        <input type="text" placeholder="email addrass" id="emails"
+                            class="form-control Sign_up_Input">
+                        <label id="email_error"></label>
+                    </div>
+                    <!-- email addrass -->
+
+                    <!-- Password -->
+                    <input type="password" placeholder="Password" id="pass" class="form-control  Sign_up_Input">
+                    <label id="pass_error" class="form-label"></label>
+                    <!-- Password -->
+
+                    <!-- date of barth -->
+                    <fieldset class="row mb-3">
+                        <label for="" class="form-label">Date of birth</label>
+                        <div class="col-sm-4 col-lg-4 pb-2 ">
+                            <label class="visually-hidden" for="specificSizeSelect">Preference</label>
+                            <select class="form-select Sign_up_Input" id="specificSizeSelect">
+
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4 col-lg-4 pb-2">
+                            <label class="visually-hidden" for="specificSizeSelect">Preference</label>
+                            <select class="form-select Sign_up_Input" id="specificSizeSelect">
+                                <option value="Jan">Jan</option>
+                                <option value="Feb">Feb</option>
+                                <option value="Mar">Mar</option>
+                                <option value="Apr">Apr</option>
+                                <option value="May">May</option>
+                                <option value="Jun">Jun</option>
+                                <option value="Jul">Jul</option>
+                                <option value="Aug">Aug</option>
+                                <option value="Sep">Sep</option>
+                                <option value="Oct">Oct</option>
+                                <option value="Nov">Nov</option>
+                                <option value="Dec">Dec</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4 col-lg-4 pb-2">
+                            <label class="visually-hidden" for="specificSizeSelect">Preference</label>
+                            <select class="form-select Sign_up_Input" id="specificSizeSelect">
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <br><br>
+                        <div>
+                            <label for="" class="form-label">Gender</label>
+                        </div>
+                        <div class="col-sm-12" style="display: flex; justify-content: space-between;">
+                            <div class="form-check">
+                                <input class="form-check-input " type="radio" name="gridRadios" id="gridRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                    Male
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input " type="radio" name="gridRadios" id="gridRadios2"
+                                    value="option2">
+                                <label class="form-check-label" for="gridRadios2">
+                                    Female
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input " type="radio" name="gridRadios" id="gridRadios2"
+                                    value="option2">
+                                <label class="form-check-label" for="gridRadios2">
+                                    Custom
+                                </label>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn sign-btn btn-primary" onclick="signup()" id="Sign_up_modal"
+                                data-bs-toggle="modal">Sign Up</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap-5.0.2-dist\js\bootstrap.js"></script>
+
+    <script>
+        function signup() {
+            var fname = document.getElementById("fnames").value;
+            var lname = document.getElementById("lnames").value;
+            var email = document.getElementById("emails").value;
+            var pas = document.getElementById("pass").value;
+
+            name_chk = /^([a-zA-Z])+$/;
+            email_chk = /^([a-zA-Z0-9\-\.]{5,20})+\@([a-zA-Z])+\.([a-zA-Z]{2,4})+$/;
+
+
+            // First name 
+
+            if (fname.length > 0) {
+                if (name_chk.test(fname) == true) {
+                    document.getElementById("lname_error").innerHTML = '';
+
+                    if (lname.length > 0) {
+                        if (name_chk.test(lname) == true) {
+                            if (email.length > 0) {
+                                if (email_chk.test(email) == true) {
+                                    if (pas.length > 0) {
+                                        window.open("Offer1.html", "_parent")
+                                    }
+                                }
+                            }
+
+
+                        }
+                    }
+
+                }
+                else {
+                    document.getElementById("fname_error").innerHTML = 'Only alphabet Allowed';
+                    document.getElementById("fname_error").style.color = "red";
+                }
+            }
+            else {
+                document.getElementById("fname_error").innerHTML = 'Please Enter Name';
+                document.getElementById("fname_error").style.color = "red";
+
+            }
+
+            // Last name 
+
+            if (lname.length > 0) {
+                if (name_chk.test(lname) == true) {
+                    document.getElementById("lname_error").innerHTML = '';
+                }
+                else {
+                    document.getElementById("lname_error").innerHTML = 'Only alphabet Allowed';
+                    document.getElementById("lname_error").style.color = "red";
+                }
+            }
+            else {
+                document.getElementById("lname_error").innerHTML = 'Please Enter Name';
+                document.getElementById("lname_error").style.color = "red";
+
+            }
+
+            // Email  
+
+            if (email.length > 0) {
+                if (email_chk.test(email) == true) {
+                    document.getElementById("email_error").innerHTML = '';
+                }
+                else {
+                    document.getElementById("email_error").innerHTML = 'Please Enter Valid Email Address';
+                    document.getElementById("email_error").style.color = "red";
+                }
+            }
+            else {
+                document.getElementById("email_error").innerHTML = 'Please Enter Email address';
+                document.getElementById("email_error").style.color = "red";
+
+            }
+
+            // Password  
+
+            if (pas.length > 0) {
+                document.getElementById("pass_error").innerHTML = '';
+            }
+            else {
+                document.getElementById("pass_error").innerHTML = 'Please Enter Password';
+                document.getElementById("pass_error").style.color = "red";
+
+            }
+        }
+    </script>
+</body>
+
+</html>

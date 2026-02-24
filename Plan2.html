@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="bootstrap-5.0.2-dist\css\bootstrap.css" rel="stylesheet">
+</head>
+<style>
+     body{
+        background-color:rgb(173, 168, 168);
+    }
+    .bg-dark {
+        background-color:rgb(90, 87, 87) !important;
+  }
+.navbar-collapse{
+  flex-grow: 0;
+}
+  span:hover {
+    background-color:black;
+    border-radius: 90px;
+    text-align: center;
+    box-shadow: 0 0 10px #f7ebeb, 0 0 20px #f7ebeb, 0 0 40px #f7ebeb, 0 0 80px #f7ebeb;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+    .pl{
+        font-size: 25px;
+         margin-left: 5%; 
+         color: white;
+         font-family: Arial, Helvetica, sans-serif;
+    }
+   
+    .yac{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+   background: url(load.jpeg);
+   -webkit-background-clip:  text;
+   background-position: 0 0;
+   animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.img1{
+    margin: auto;
+    display: block;
+    box-shadow: -20px 20px 10px 5px rgb(153, 147, 147);
+}
+@media screen and (max-width : 600px) {
+    .img1{
+       width: 100%;
+    }
+}
+p{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.button{
+    margin: auto;
+    border: none;
+    border-radius: 20px;
+    height: 45px;
+    background-color: rgb(26, 21, 21);
+   width: 35%;
+}
+@media screen and (max-width : 600px) {
+    .button{
+   width: 70%;
+   
+}
+}
+.button:hover {
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px #f7ebeb, 0 0 20px #f7ebeb, 0 0 40px #f7ebeb, 0 0 80px #f7ebeb;
+}
+.cont {
+            border: 2px solid black;
+            background-color: #99dddd;
+        }
+
+        .modal-footer button {
+            width: 47%;
+        }
+        input{
+            box-shadow:inset 0px 0px 8px;
+        }
+
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="row" >
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="Index.html">
+                  <img src="images0\logo.jpeg"
+                    alt="Avatar Logo" style="width:100px; height: 50px;" class="rounded-pill">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar" >
+                  <ul class="navbar-nav">
+                    <span>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Index.html" style="width: 100px; color:white;">HOME</a>
+                      </li>
+                    </span>
+                    <span>
+                      <li class="nav-item">
+                        <a class="nav-link" href="gallery.html" style="width: 100px; color:white">GALLERY</a>
+                      </li>
+                    </span>              
+                    <span>
+                      <li class="nav-item">
+                        <a class="nav-link" href="fishing.html" style="width: 100px; color:white">BRANDS</a>
+                      </li>
+                    </span>
+                    <span>
+                      <li class="nav-item">
+                        <a class="nav-link" href="About Us.html" style="width: 140px; color:white">ABOUT US</a>
+                      </li>
+                    </span>
+                    <span>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Contact Us.html " style="width: 140px; color:white">CONTACT US</a>
+                      </li>
+                    </span>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!--End of header--><br><br>
+    
+    
+    <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="yac">LOUIS YALE</h3>
+                    <img src="images0\plan2.jpg" class="img1" alt="Dubai" width="50%"><br><br>
+                    <p>$105 MILLION<br>		
+                    Manufacturer: Saginaw, Michigan | Production: From 1916 to 1918
+                    </p>
+    
+                    <!-- <a href="Offer2.html" target="_blank"><button class="button">WANDERLUST's OFFER</button></a> -->
+                    <div class="container mt-3" style="display: flex; align-items: center; justify-content: center;"> 
+                        <button type="button" class="btn btn-primary button" data-bs-toggle="modal" data-bs-target="#Signin"> 
+                            MORE&nbsp;SPECIFICATION
+                        </button> 
+                     </div> 
+                </div>
+            </div>
+        </div><br>
+    
+<!-- Sign UP Modal -->
+<div class="modal fade"  id="Signup">
+    <div class="modal-dialog" >
+        <div class="modal-content cont" style="background-color:darkgray">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"
+                    style="text-align: center; width: 100%; font-weight: bold; font-size: 150%;">Sign UP</h5>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- first name -->
+                    <div class="col">
+                        <input type="text" placeholder="First name" style="border-color: black;" aria-label="First name" id="fnames"
+                            class="form-control Sign_up_Input">
+                        <label id="fname_error"></label>
+                    </div>
+                    <!-- first name -->
+
+                    <!-- Last name -->
+                    <div class="col">
+                        <input type="text" placeholder="Last name" aria-label="Last name" id="lnames" style="border-color: black;"
+                            class="form-control Sign_up_Input">
+                        <label id="lname_error"></label>
+                    </div>
+                    <!-- Last name -->
+                </div>
+
+                <!-- email addrass -->
+                <div>
+                    <input type="text" placeholder="email address" id="emails" style="border-color: black;"
+                        class="form-control Sign_up_Input"><label id="email_error"></label>
+                </div>
+                <!-- email addrass -->
+
+                <!-- Password -->
+                <input type="password" placeholder="Password" id="pass" style="border-color: black;"  class="form-control  Sign_up_Input"><label
+                    id="pass_error" class="form-label"></label><br>
+                <!-- Password -->
+                <!-- check box -->
+                <input class="form-check-input" type="checkbox" name="remember" class="form-control  Sign_up_Input"> Remember me
+                <!-- check box -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary sign-btn" style="background-color: #6c757d;    border-color: #6c757d;
+      " data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="span1" style="background-color: black; border-color: black;"  id="Sign_up_modal" onclick="signup()">Sign Up</button>
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Sign IN Modal -->
+    <div class="modal fade" id="Signin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog" >
+            <div class="modal-content cont" style="background-color:darkgray">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"
+                        style="text-align: center; width: 100%; font-weight: bold; font-size: 150%; color: black">Log in
+                    </h5>
+                </div>
+                <div class="modal-body">
+
+                    <!-- email addrass Start-->
+                    <div>
+                        <input type="text" placeholder="email address" id="emails2" style="border-color: black;" class="form-control Sign_up_Input">
+                        <label id="email_error2"></label>
+                    </div>
+                    <!-- email addrass End-->
+
+                    <!-- Password Start -->
+                    <input type="password" placeholder="Password" id="pass2" style="border-color: black;" class="form-control Sign_up_Input">
+                    <label id="pass_error2" class="form-label"></label><br>
+                    <!-- Password End-->
+                    <button data-bs-toggle="modal" data-bs-target="#Signup" data-bs-dismiss="modal"
+                        style="border:none; background : none; color : black; margin : 20px 0"> Click Here For New Registration 😀</button>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary sign-btn" style="background-color: #6c757d;   border-color: #6c757d;" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="span1" style="background-color: black; border-color: black;" onclick="signin()">Sign in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        // Sign Up Start
+name_chk = /^([a-zA-Z])+$/;
+email_chk = /^([a-zA-Z0-9\-\.]{5,20})+\@([a-zA-Z])+\.([a-zA-Z]{2,4})+$/;
+
+// First name 
+document.getElementById("fnames").addEventListener("blur", function () {
+    if (this.value.length > 0) {
+        if (name_chk.test(this.value) == true) {
+            document.getElementById("fname_error").innerHTML = '';
+        }
+        else {
+            document.getElementById("fname_error").innerHTML = 'Only alphabet Allowed';
+            document.getElementById("fname_error").style.color = "red";
+        }
+    }
+    else {
+        document.getElementById("fname_error").innerHTML = 'Please Enter Name';
+        document.getElementById("fname_error").style.color = "red";
+
+    }
+});
+
+// Last name 
+document.getElementById("lnames").addEventListener("blur", function () {
+    if (this.value.length > 0) {
+        if (name_chk.test(this.value) == true) {
+            document.getElementById("lname_error").innerHTML = '';
+        }
+        else {
+            document.getElementById("lname_error").innerHTML = 'Only alphabet Allowed';
+            document.getElementById("lname_error").style.color = "red";
+        }
+    }
+    else {
+        document.getElementById("lname_error").innerHTML = 'Please Enter Name';
+        document.getElementById("lname_error").style.color = "red";
+
+    }
+});
+// Email  
+document.getElementById("emails").addEventListener("blur", function () {
+    if (this.value.length > 0) {
+        if (email_chk.test(this.value) == true) {
+            document.getElementById("email_error").innerHTML = '';
+        }
+        else {
+            document.getElementById("email_error").innerHTML = 'Please Enter Valid Email Address';
+            document.getElementById("email_error").style.color = "red";
+        }
+    }
+    else {
+        document.getElementById("email_error").innerHTML = 'Please Enter Email address';
+        document.getElementById("email_error").style.color = "red";
+
+    }
+});
+// Password  
+document.getElementById("pass").addEventListener("blur", function () {
+    if (this.value.length > 0) {
+        document.getElementById("pass_error").innerHTML = '';
+    }
+    else {
+        document.getElementById("pass_error").innerHTML = 'Please Enter Password';
+        document.getElementById("pass_error").style.color = "red";
+
+    }
+});
+
+
+var SignUpModal2 = new bootstrap.Modal(document.getElementById("Signup"));
+
+function signup() {
+    var fnames = document.getElementById('fnames').value;
+    var lnames = document.getElementById('lnames').value;
+    var pasword = document.getElementById('pass').value;
+    var emails = document.getElementById('emails').value;
+    var fname_error = document.getElementById("fname_error").innerHTML;
+    var lname_error = document.getElementById("lname_error").innerHTML;
+    var email_error = document.getElementById("email_error").innerHTML;
+    var pass_error = document.getElementById("pass_error").innerHTML;
+    var SignInModal = new bootstrap.Modal(document.getElementById("Signin"));
+
+    name_chk = /^([a-zA-Z])+$/;
+    email_chk = /^([a-zA-Z0-9\-\.]{5,20})+\@([a-zA-Z])+\.([a-zA-Z]{2,4})+$/;
+
+    //                                       F Name
+    if (fnames.length > 0) {
+        if (name_chk.test(fnames) == true) {
+            document.getElementById("fname_error").innerHTML = '';
+        }
+        else {
+            document.getElementById("fname_error").innerHTML = 'Only alphabet Allowed';
+            document.getElementById("fname_error").style.color = "red";
+        }
+    }
+    else {
+        document.getElementById("fname_error").innerHTML = 'Please Enter Name';
+        document.getElementById("fname_error").style.color = "red";
+
+    }
+
+    //                                       L Name
+    if (lnames.length > 0) {
+        if (name_chk.test(lnames) == true) {
+            document.getElementById("lname_error").innerHTML = '';
+        }
+        else {
+            document.getElementById("lname_error").innerHTML = 'Only alphabet Allowed';
+            document.getElementById("lname_error").style.color = "red";
+        }
+    }
+    else {
+        document.getElementById("lname_error").innerHTML = 'Please Enter Name';
+        document.getElementById("lname_error").style.color = "red";
+
+    }
+    //                                       Email
+    if (emails.length > 0) {
+        if (email_chk.test(emails) == true) {
+            document.getElementById("email_error").innerHTML = '';
+        }
+        else {
+            document.getElementById("email_error").innerHTML = 'Please Enter Valid Email';
+            document.getElementById("email_error").style.color = "red";
+        }
+    }
+    else {
+        document.getElementById("email_error").innerHTML = 'Please Enter Email';
+        document.getElementById("email_error").style.color = "red";
+
+    }
+    //                                       Password
+    if (pasword.length > 0) {
+        document.getElementById("pass_error").innerHTML = '';
+    }
+    else {
+        document.getElementById("pass_error").innerHTML = 'Please Enter Password';
+        document.getElementById("pass_error").style.color = "red";
+
+    }
+
+    localStorage.setItem("First Name", fnames);
+    localStorage.setItem("Last Name", lnames);
+    localStorage.setItem("ID", emails);
+    localStorage.setItem("Pass", pasword);
+    
+
+    if (name_chk.test(fnames) == true && name_chk.test(lnames) == true && email_chk.test(emails) == true && pasword.length > 0) {
+        window.location.href="Visit2.html";
+    }
+    else {
+
+    }
+
+}
+
+// Sign IN Start 
+function signin() {
+
+    ssfn = localStorage.getItem("First Name");
+    ssln = localStorage.getItem("Last Name");
+    ssid = localStorage.getItem("ID");
+    sspass = localStorage.getItem("Pass");
+
+    emails = document.getElementById('emails2').value;
+    ages = document.getElementById('pass2').value;
+
+
+    // Email Start 
+    if (emails.length == 0 && ages.length == 0) {
+        document.getElementById("email_error2").innerHTML = "Please Enter Email address";
+        document.getElementById("email_error2").style.color = "red";
+        document.getElementById("pass_error2").innerHTML = "Please Enter Password";
+        document.getElementById("pass_error2").style.color = "red";
+    }
+    else if (emails == ssid && ages == sspass) {
+        document.getElementById("email_error2").innerHTML = "";
+        document.getElementById("pass_error2").innerHTML = "";
+        document.getElementById('emails2').value = "";
+        document.getElementById('pass2').value = "";
+        window.location.href="Visit2.html";
+    }
+    else if (emails != ssid && ages == sspass) {
+        document.getElementById("email_error2").innerHTML = "Please Check Your Email address";
+        document.getElementById("email_error2").style.color = "red";
+        document.getElementById("pass_error2").innerHTML = "";
+    }
+    else if (emails == ssid && ages != sspass) {
+        document.getElementById("pass_error2").innerHTML = "Please Check Your Password";
+        document.getElementById("pass_error2").style.color = "red";
+        document.getElementById("email_error2").innerHTML = "";
+    }
+    else if (emails != ssid && pass != sspass) {
+        document.getElementById("email_error2").innerHTML = "Please Check Your Email address";
+        document.getElementById("email_error2").style.color = "red";
+        document.getElementById("pass_error2").innerHTML = "Please Check Your Password";
+        document.getElementById("pass_error2").style.color = "red";
+    }
+    else { }
+
+
+}
+// Sign IN End
+    </script>
+
+
+
+
+
+
+<script src="bootstrap-5.0.2-dist\js\bootstrap.js"></script>
+</body>
+</html>

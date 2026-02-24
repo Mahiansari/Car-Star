@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap-5.0.2-dist\css\bootstrap.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="width: 100%; height: 100vh; background: linear-gradient(rgba(0, 0, 0,0.7),rgba(0, 0, 0,0.7)),url(blur.jpg); background-position: center; background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 m-auto p-5 bg-light" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); border-radius: 10px; box-shadow: 0px 0px 20px 3px rgb(131, 195, 248); border: 1px solid black;">
+                    <!-- email addrass Start-->
+                    <div>
+                        <input type="text" placeholder="email addrass" id="emails2" class="form-control Sign_up_Input">
+                        <label id="email_error2"></label>
+                    </div>
+                    <!-- email addrass End-->
+    
+                    <!-- Password Start -->
+                    <input type="password" placeholder="Password" id="pass2" class="form-control Sign_up_Input">
+                    <label id="pass_error2" class="form-label"></label><br>
+                    <!-- Password End-->
+                    <a href="F:\Arsalan\Sign-Up.html" style="border:none; background : none; color : blue; margin : 20px 0; text-decoration: none;">Create a new Account
+                        !!</a>
+                    <!-- <button data-bs-toggle="modal" data-bs-target="#Signup" data-bs-dismiss="modal"
+                        style="border:none; background : none; color : blue; margin : 20px 0"> Create a new Account
+                        !!</button> -->
+    
+                    <div class="modal-footer">
+                        <button type="button" class="btn sign-btn btn-primary" onclick="signin()">Sign in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="bootstrap-5.0.2-dist\js\bootstrap.js"></script>
+
+    <script>
+        function signin() {
+            var email2 = document.getElementById("emails2").value;
+            var pas2 = document.getElementById("pass2").value;
+
+            email_chk = /^([a-zA-Z0-9\-\.]{5,20})+\@([a-zA-Z])+\.([a-zA-Z]{2,4})+$/;
+
+            if (email2.length > 0) {
+                if (email_chk.test(email2) == true) {
+                    document.getElementById("email_error2").innerHTML = '';
+
+                    if (pas2.length > 0) {
+                        window.open("Offer1.html","_parent");
+                    }
+
+                }
+
+            }
+            if (email2.length > 0) {
+                if (email_chk.test(email2) == true) {
+
+                }
+                else {
+                    document.getElementById("email_error2").innerHTML = 'Please Enter Valid Email Address';
+                    document.getElementById("email_error2").style.color = "red";
+                }
+            }
+            else {
+                document.getElementById("email_error2").innerHTML = "Please Enter Email address";
+                document.getElementById("email_error2").style.color = "red";
+            }
+
+            if (pas2.length > 0) {
+                document.getElementById("pass_error2").innerHTML = "";
+            }
+            else {
+                document.getElementById("pass_error2").innerHTML = "Please Enter Email address";
+                document.getElementById("pass_error2").style.color = "red";
+            }
+
+        }
+    </script>
+</body>
+
+</html>
